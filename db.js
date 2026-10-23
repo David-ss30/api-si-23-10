@@ -1,0 +1,9 @@
+import mysql from "mysql2/promise"
+
+export const poll = mysql.createPool({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "P@$$w0rd",
+    database: "api_si"
+})
